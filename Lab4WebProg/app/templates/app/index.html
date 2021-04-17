@@ -1,0 +1,132 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <h1>Средневековые замки</h1>
+    <p class="lead"> Первые укрепления в виде средневековых замков появились в IX - X вв. в то время, когда странам Центральной Европы ( Франции, Германии и Северной Италии) начала угрожать агрессия и вторжение варварских племён, и викингов. Это сильно мешало развитию империи, cозданной Карлом Великим. Для защиты земель начинали возводить укрепления из деревянных построек. Такая архитектура "прочного дерева" для более надёжной защиты добавлялась окружением землянного рва и вала. Через ров на цепочках или прочных верёвках опрокидывался навесной мост, по которому попадали в жилой посёлок. На гребне вала устанавливали частокол. Верхушка его ствола остро натачивалась орудиями труда и вкапывалась в землю на достаточно большой высоте, безопасной от проникновения вовнутрь укрепления. В XI веке замки стали строить на искусственных холмах. Такие холмы насыпали рядом с двором, ограждённым высоким частоколом.</p>
+    <p><a href="http://srednyvek.ru/istoriya/zamok" class="btn btn-primary btn-large">Узнать больше &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Эдинбургский замок</h2>
+        <p>
+            Одна из самых известных достопримечательностей Шотландии — Эдинбургский замок, расположенный в самом центре города. Эта старинная прекрасная крепость на краю неприступного утеса долгое время была важным стратегическим объектом обороны страны. И до сих пор считается одной из штаб-квартир британской армии, хотя многие годы является архитектурной достопримечательностью, куда толпами ходят туристы.
+        </p>
+        <p><a class="btn btn-default" href="https://pytrip.ru/edinburgskij-zamok/">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Замок Керлаверок</h2>
+        <p>Этот замок стал одним из самых первых замков Шотландии, сооружённых в камне. Он имел прямоугольную форму и был окружён рвом, через который имелся мост на северной стороне. На сегодняшний день от этой первой крепости, остались лишь следы фундамента. В 1270-ых племянник Джона, Герберт Максвелл, выстроил новый (существующий) замок, став его первым владельцем.</p>
+        <p><a class="btn btn-default" href="https://worldartdalia.blogspot.com/2012/08/blog-post_7798.html">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Виндзорский замок</h2>
+        <p>Сегодня Виндзорский замок известен на весь мир как летняя резиденция английских монархов, а в город ежедневно приезжают сотни и тысячи туристов, чтобы посмотреть на это чудо архитектуры и на хранящиеся в нем художественные ценности, услышать новые интересные факты его истории и подробности жизни королевы.</p>
+        <p><a class="btn btn-default" href="https://www.miroworld.ru/vindzorskij-zamok/">Узнать больше&raquo;</a></p>
+    </div>
+</div>
+{% load staticfiles %}
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators">
+
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+
+            <img src="{% static 'app/content/banner1.svg' %} " alt="Первый слайд" class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Самые страшные замки мира
+
+                    <a class="btn btn-default" href="https://patriotov.net/interesnoe/289-samye-strashnye-zamki-mira-dver-v-potustoronnyuyu-realnost">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src="{% static 'app/content/banner2.svg'%}" alt="Второй слайд"  class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Самые красивые замки мира
+
+                    <a class="btn btn-default" href="https://most-beauty.ru/mesta/samye-krasivye-zamki-mira.html">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src=" {% static 'app/content/banner3.svg'%} " alt="Третий слайд"  class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p>
+
+                    Самые известные замки мира
+
+                    <a class="btn btn-default" href="https://wikiway.com/dostoprimechatelnosti/zamki-kreposti/">
+
+                        Читать далее
+
+                    </a>
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        <span class="sr-only">Предыдущий</span>
+
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        <span class="sr-only">Следующий</span>
+
+    </a>
+
+</div>
+{% endblock %}
